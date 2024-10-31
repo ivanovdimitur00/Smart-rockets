@@ -98,7 +98,7 @@ There are a few ways to access and use this project:
 ## Usage examples
 We assume that the project has been accessed on the internet or has been run on a local instance. 
 
-The user can tweak parameters such as the target \[message], population size and mutation chance in the `sketch.js` file.
+The user can tweak parameters such as the target's position, the amount and position of obstacles, the life span, population size and mutation chance in the `sketch.js` file.
 <br/>
 <br/>
 
@@ -118,11 +118,12 @@ Nothing to mention here.
 <br/>
 
 ## Future improvements
-- [ ] I don't appear to like the current file scructure/object model. maybe I can experiment by doing a restructuring;
+- [ ] The current file scructure/object model really needs a restructuring since the guide is messy;
 - [ ] Different way to calculate fitness;
 - [ ] Different way to pick parents to make offspring;
-- [ ] Different way to do crossover.
-NOTE: The last 3 are mostly cosmetic and don't change the final outcome in a significant way.
+- [ ] Different way to do crossover;
+- [ ] Different way to do selection;
+- [ ] A level system with different obstacles.
 <br/>
 <br/>
 
