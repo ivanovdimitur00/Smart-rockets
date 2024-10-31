@@ -48,25 +48,34 @@ The general algortihm is explained in several places:
 ## Key features and functionalities
 * ### KEY FEATURES
    * Users can modify key parameters of the simulation;
+   * Users can modify how the objects are drawn;
+   * Users can place obstacles on the field;
+   * Users can change the target's position. Live in the simulation!; 
    * Users can watch the simulation and population develop live.
  
 * ### FUNCTIONALITIES
-   * Modifiable parameters such as target message, population size and mutation chance;
+   * Modifiable parameters such as life span target position, population size and mutation chance;
    * Crossover process using random pivot point method;
-   * Linear-based fitness calculation;
-   * Memory-based mating pool, using a "lucky wheel" strategy to pick 2 parents;
+   * Luadratic function fitness calculation;
+   * CPU-intensive mating pool generation using a race (start-finish) strategy to pick 2 parents;
    * Chance to mutate the genes of the offspring;
-   * Monitoring the best individual (object) of the population;
+   * Monitoring the total time to live and the time left to live;
    * Generation counter;
-   * Partial live view of the population.
+   * Live view of the population;
+   * Obstacles with collision;
+   * Changing the target's location live in the simulation;
+   * Objects that actually live;
+   * Simple euclidean 2D movement.
 <br/>
 
 ## Structutre
 Here are some of the important directories and files you need to know about this project:
 * `p5` - The folder with the p5.js library files;
-* `DNA.js` - The class containing the DNA of an object, the fitness calculation, crossover and mutation functions;
-* `population.js` - The class that generates the initial population and manages it. Contains the functions for generating a new population, fetching the best individual, monitoring the generation number and getting some of the individuals to send to the display; 
-* `sketch.js` - The class containing the paratemters for the population such as size, mutation chance and target. contains the canvas, where everything in the simulation is displayed. Contains the procedure for the simulation.
+* `dna.js` - The class containing the DNA of an object and the crossover and mutation functions;
+* `population.js` - The class that generates the initial population and manages it. Contains the functions for generating a new population, living, calculating fitness and selection; 
+* `sketch.js` - The class containing the paratemters for the population such as size, mutation chance, target, obstacles and life span. Contains the canvas, where everything in the simulation is displayed. Contains the procedure for the simulation. Contains the function to change the target's position;
+* `obstacle.js` - The class that describes the obstacle. Contains the function to check collision. NOTE: The target that the individuals of the population try to reach is a special obstacle;
+* `rocket.js` - The class that describes the individual, participating in the population, and having DNA. Contains functions for fitness calculations, movement, displaying the model and checks for obstacles and targets.
 <br/>
 
 ## Installation instructions
