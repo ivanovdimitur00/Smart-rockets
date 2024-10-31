@@ -81,7 +81,7 @@ Here are some of the important directories and files you need to know about this
 ## Installation instructions
 There are a few ways to access and use this project:
 1. You can download the project files from this github repo and the [p5.js library](https://p5js.org/) and run it locally on your computer by opening the index.html file;
-2. You can visit this [p5.js live editor](https://editor.p5js.org/natureofcode/sketches/ZwT5cPix2).
+2. You can visit this [p5.js live editor](https://editor.p5js.org/natureofcode/sketches/565K_KXSA).
 <br/>
 
 ## Dependencies
